@@ -1,4 +1,4 @@
-tinyMCE-additions
-=================
+# tinyMCE-additions
 
-Our CSS additions to the tinyMCE WYSIWYG editor
+
+Our CSS additions to our version of the tinyMCE WYSIWYG editor
