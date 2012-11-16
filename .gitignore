@@ -46,6 +46,8 @@ fire_app_log.txt
 build_*
 output
 output/**/*
+build
+build/**/*
 stylesheets/
 stylesheets/**/*
 # coffeescripts/**/*
