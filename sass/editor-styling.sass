@@ -1,11 +1,78 @@
 // Name: tinyMCE editor additions for Østfold University College
 // Author: Kenneth Dahlstrøm
-// Updated: November 16th, 2012
+// Updated: November 27th, 2012
 // Version: v1.0.0
 @charset "UTF-8"
+
+
+// Imports
+@import compass/css3
+@import ../plugins/hiof-frontend/sass/_config.sass
 @import ../plugins/hiof-frontend/sass/_typography.sass
+@import ../plugins/hiof-frontend/sass/plugins/symbolset/ss-standard/ss-standard.css.scss
+@import ../plugins/hiof-frontend/sass/design/sections/_layout-with-display-table.sass
+@import ../plugins/hiof-frontend/sass/design/sections/_table-hiof-design.sass
+@import ../plugins/hiof-frontend/sass/design/sections/_message-design.sass
+
+
+// Constants for use in the system
+
+  //-------------------------------------------------------------
+  //-------------------------------------------------------------
+  // Tool names for classes
+  //-------------------------------------------------------------
+
+
+  // [{"title" : "Sitat", "block" : "blockquote"}, {"title" : "Sitat kilde", "inline" : "cite"}, {"title" : "Flyr til venstre", "block" : "div", "classes" : "left"}, {"title" : "Informasjonsboks", "block" : "aside", "classes" : "information"}]
+
+
+
+
+  //-------------------------------------------------------------
+  //-------------------------------------------------------------
+  // Tool names for formats
+  //-------------------------------------------------------------
+
+
+
+  // [{"title" : "Avsnitt", "block" : "p"}, {"title" : "Overskrift 1", "block" : "h1"}, {"title" : "Overskrift 2", "block" : "h2"}, {"title" : "Overskrift 3", "block" : "h3"}, {"title" : "overskrift 4", "block" : "h4"}, {"title" : "Overskrift 5", "block" : "h5"}, {"title" : "Overskrift 6", "block" : "h6"}, {"title" : "Sitat", "block" : "blockquote"}]
+
+
+
+
+// Editor styling
+
+
 html
   @extend %typography-setup
 #tinymce
   @extend %typography-role-main
   max-width: 600px
+
+  //-------------------------------------------------------------
+  //-------------------------------------------------------------
+  // Tools in the dropbown
+  //-------------------------------------------------------------
+
+  
+  .float-left
+    float: left
+  .float-right
+    float: right
+  .clearfix:before,
+  .clearfix:after 
+    content: " "
+    display: table
+  .clearfix:after 
+    clear: both
+  .clearfix 
+    *zoom: 1
+
+  @extend %layout-with-display-table
+  @extend %message-hiof
+
+
+
+
+
+
