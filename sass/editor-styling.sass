@@ -44,8 +44,12 @@
 
 
 html
+  // extention of the typography-setup from:
+  // ../plugins/hiof-frontend/sass/_typography.sass
   @extend %typography-setup
 #tinymce
+  // extention of the %typography-role-main from:
+  // ../plugins/hiof-frontend/sass/_typography.sass
   @extend %typography-role-main
   max-width: 600px
 
@@ -68,7 +72,11 @@ html
   .clearfix 
     *zoom: 1
 
+  // extention of the layout-with-display-table from:
+  // ../plugins/hiof-frontend/sass/design/sections/_layout-with-display-table.sass
   @extend %layout-with-display-table
+  // extention of the message-hiof from:
+  // ../plugins/hiof-frontend/sass/design/sections/_message-design.sass
   @extend %message-hiof
 
 
